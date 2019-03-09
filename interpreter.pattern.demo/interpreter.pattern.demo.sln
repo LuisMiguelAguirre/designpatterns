@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interpreter.pattern.demo", "interpreter.pattern.demo\interpreter.pattern.demo.csproj", "{CD1239AB-DE50-4E0D-8310-7A5C8A497DE3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kourosvi.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = interpreter.pattern.demo\\interpreter.pattern.demo.csproj
+		SccProjectName1 = interpreter.pattern.demo
+		SccLocalPath1 = interpreter.pattern.demo
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD1239AB-DE50-4E0D-8310-7A5C8A497DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1239AB-DE50-4E0D-8310-7A5C8A497DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1239AB-DE50-4E0D-8310-7A5C8A497DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1239AB-DE50-4E0D-8310-7A5C8A497DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

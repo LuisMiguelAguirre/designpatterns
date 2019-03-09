@@ -1,0 +1,538 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B4B760E2-50BA-44AA-92E8-99876988A0BF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>design_patterns</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="abstract factory\abstract factory.sln" />
+    <Content Include="abstract factory\abstract factory\abstract factory.csproj" />
+    <Content Include="abstract factory\abstract factory\abstract factory.csproj.user" />
+    <Content Include="adapter.pattern.demo\adapter.pattern.demo.sln" />
+    <Content Include="adapter.pattern.demo\adapter.pattern.demo\adapter.pattern.demo.csproj" />
+    <Content Include="bridge.pattern.demo\bridge.pattern.demo.sln" />
+    <Content Include="bridge.pattern.demo\bridge.pattern.demo\bridge.pattern.demo.csproj" />
+    <Content Include="builder.pattern.demo\builder.pattern.demo.sln" />
+    <Content Include="builder.pattern.demo\builder.pattern.demo\builder.pattern.demo.csproj" />
+    <Content Include="ChainofResponsability\ChainofResponsability.sln" />
+    <Content Include="ChainofResponsability\ChainofResponsability\ChainofResponsability.csproj" />
+    <Content Include="command.pattern.demo\command.pattern.demo.sln" />
+    <Content Include="command.pattern.demo\command.pattern.demo\command.pattern.demo.csproj" />
+    <Content Include="composite.pattern.demo\composite.pattern.demo.sln" />
+    <Content Include="composite.pattern.demo\composite.pattern.demo\composite.pattern.demo.csproj" />
+    <Content Include="Decorator\Decorator\Decorator.csproj" />
+    <Content Include="FacadePatternEx\FacadePatternEx.sln" />
+    <Content Include="FacadePatternEx\FacadePatternEx\FacadePatternEx.csproj" />
+    <Content Include="FacadePatternEx\roboparts\roboparts.csproj" />
+    <Content Include="FacadePatternEx\robotfacade\robotfacade.csproj" />
+    <Content Include="factory.pattern.demo\factory.pattern.demo.sln" />
+    <Content Include="factory.pattern.demo\factory.pattern.demo\factory.pattern.demo.csproj" />
+    <Content Include="flyweight.pattern.demo\flyweight.pattern.demo.sln" />
+    <Content Include="flyweight.pattern.demo\flyweight.pattern.demo\flyweight.pattern.demo.csproj" />
+    <Content Include="Ienumerable\Ienumerable.sln" />
+    <Content Include="Ienumerable\Ienumerable\Ienumerable.csproj" />
+    <Content Include="interpreter.pattern.demo\interpreter.pattern.demo.sln" />
+    <Content Include="interpreter.pattern.demo\interpreter.pattern.demo\interpreter.pattern.demo.csproj" />
+    <Content Include="IteratorPattern\aggregate\aggregate.csproj" />
+    <Content Include="IteratorPattern\IteratorPattern.sln" />
+    <Content Include="IteratorPattern\IteratorPattern\IteratorPattern.csproj" />
+    <Content Include="IteratorPattern\iterator\iterator.csproj" />
+    <Content Include="Mediator\Mediator.sln" />
+    <Content Include="Mediator\Mediator\Mediator.csproj" />
+    <Content Include="memento.pattern.demo\memento.pattern.demo.sln" />
+    <Content Include="memento.pattern.demo\memento.pattern.demo\memento.pattern.demo.csproj" />
+    <Content Include="Observer\Observer.sln" />
+    <Content Include="Observer\Observer\Observer.csproj" />
+    <Content Include="Prototype\BasicCar\Car.csproj" />
+    <Content Include="Prototype\Prototype.sln" />
+    <Content Include="Prototype\Prototype\Prototype.csproj" />
+    <Content Include="ProxyPattern\ProxyClasses\ProxyClasses.csproj" />
+    <Content Include="Singleton\Singleton.sln" />
+    <Content Include="Singleton\Singleton\Singleton.csproj" />
+    <Content Include="state.pattern.demo\state.pattern.demo.sln" />
+    <Content Include="state.pattern.demo\state.pattern.demo\state.pattern.demo.csproj" />
+    <Content Include="Strategy.pattern.demo\Strategy.pattern.demo\Strategy.pattern.demo.csproj" />
+    <Content Include="Template Method patterns\Template Method patterns\Template Method patterns.csproj" />
+    <Content Include="visitor.pattern.demo\visitor.pattern.demo.sln" />
+    <Content Include="visitor.pattern.demo\visitor.pattern.demo\visitor.pattern.demo.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="abstract factory\abstract factory.vssscc" />
+    <None Include="abstract factory\abstract factory\abstract factory.csproj.vspscc" />
+    <None Include="abstract factory\abstract factory\App.config" />
+    <None Include="abstract factory\abstract factory\obj\Debug\abstract factory.csproj.CoreCompileInputs.cache" />
+    <None Include="abstract factory\abstract factory\obj\Debug\abstract factory.csprojAssemblyReference.cache" />
+    <None Include="abstract factory\abstract factory\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="adapter.pattern.demo\adapter.pattern.demo.vssscc" />
+    <None Include="adapter.pattern.demo\adapter.pattern.demo\adapter.pattern.demo.csproj.vspscc" />
+    <None Include="adapter.pattern.demo\adapter.pattern.demo\App.config" />
+    <None Include="adapter.pattern.demo\adapter.pattern.demo\obj\Debug\adapter.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="adapter.pattern.demo\adapter.pattern.demo\obj\Debug\adapter.pattern.demo.csprojAssemblyReference.cache" />
+    <None Include="adapter.pattern.demo\adapter.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="bridge.pattern.demo\bridge.pattern.demo.vssscc" />
+    <None Include="bridge.pattern.demo\bridge.pattern.demo\App.config" />
+    <None Include="bridge.pattern.demo\bridge.pattern.demo\bridge.pattern.demo.csproj.vspscc" />
+    <None Include="bridge.pattern.demo\bridge.pattern.demo\obj\Debug\bridge.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="bridge.pattern.demo\bridge.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="builder.pattern.demo\builder.pattern.demo.vssscc" />
+    <None Include="builder.pattern.demo\builder.pattern.demo\App.config" />
+    <None Include="builder.pattern.demo\builder.pattern.demo\builder.pattern.demo.csproj.vspscc" />
+    <None Include="builder.pattern.demo\builder.pattern.demo\obj\Debug\builder.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="builder.pattern.demo\builder.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ChainofResponsability\ChainofResponsability.vssscc" />
+    <None Include="ChainofResponsability\ChainofResponsability\App.config" />
+    <None Include="ChainofResponsability\ChainofResponsability\ChainofResponsability.csproj.vspscc" />
+    <None Include="ChainofResponsability\ChainofResponsability\obj\Debug\ChainofResponsability.csproj.CoreCompileInputs.cache" />
+    <None Include="ChainofResponsability\ChainofResponsability\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="command.pattern.demo\command.pattern.demo.vssscc" />
+    <None Include="command.pattern.demo\command.pattern.demo\App.config" />
+    <None Include="command.pattern.demo\command.pattern.demo\command.pattern.demo.csproj.vspscc" />
+    <None Include="command.pattern.demo\command.pattern.demo\obj\Debug\command.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="command.pattern.demo\command.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="composite.pattern.demo\composite.pattern.demo.vssscc" />
+    <None Include="composite.pattern.demo\composite.pattern.demo\App.config" />
+    <None Include="composite.pattern.demo\composite.pattern.demo\composite.pattern.demo.csproj.vspscc" />
+    <None Include="composite.pattern.demo\composite.pattern.demo\obj\Debug\composite.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="composite.pattern.demo\composite.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Decorator\Decorator\App.config" />
+    <None Include="Decorator\Decorator\Decorator.csproj.vspscc" />
+    <None Include="Decorator\Decorator\obj\Debug\Decorator.csproj.CoreCompileInputs.cache" />
+    <None Include="Decorator\Decorator\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="FacadePatternEx\FacadePatternEx.vssscc" />
+    <None Include="FacadePatternEx\FacadePatternEx\App.config" />
+    <None Include="FacadePatternEx\FacadePatternEx\FacadePatternEx.csproj.vspscc" />
+    <None Include="FacadePatternEx\FacadePatternEx\obj\Debug\build.force" />
+    <None Include="FacadePatternEx\FacadePatternEx\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="FacadePatternEx\FacadePatternEx\obj\Debug\FacadePatternEx.csproj.CoreCompileInputs.cache" />
+    <None Include="FacadePatternEx\roboparts\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="FacadePatternEx\roboparts\obj\Debug\roboparts.csproj.CoreCompileInputs.cache" />
+    <None Include="FacadePatternEx\roboparts\roboparts.csproj.vspscc" />
+    <None Include="FacadePatternEx\robotfacade\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="FacadePatternEx\robotfacade\obj\Debug\robotfacade.csproj.CoreCompileInputs.cache" />
+    <None Include="FacadePatternEx\robotfacade\robotfacade.csproj.vspscc" />
+    <None Include="factory.pattern.demo\factory.pattern.demo.vssscc" />
+    <None Include="factory.pattern.demo\factory.pattern.demo\App.config" />
+    <None Include="factory.pattern.demo\factory.pattern.demo\factory.pattern.demo.csproj.vspscc" />
+    <None Include="factory.pattern.demo\factory.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="factory.pattern.demo\factory.pattern.demo\obj\Debug\factory.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="flyweight.pattern.demo\flyweight.pattern.demo.vssscc" />
+    <None Include="flyweight.pattern.demo\flyweight.pattern.demo\App.config" />
+    <None Include="flyweight.pattern.demo\flyweight.pattern.demo\flyweight.pattern.demo.csproj.vspscc" />
+    <None Include="flyweight.pattern.demo\flyweight.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="flyweight.pattern.demo\flyweight.pattern.demo\obj\Debug\flyweight.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="Ienumerable\Ienumerable.vssscc" />
+    <None Include="Ienumerable\Ienumerable\App.config" />
+    <None Include="Ienumerable\Ienumerable\Ienumerable.csproj.vspscc" />
+    <None Include="interpreter.pattern.demo\interpreter.pattern.demo.vssscc" />
+    <None Include="interpreter.pattern.demo\interpreter.pattern.demo\App.config" />
+    <None Include="interpreter.pattern.demo\interpreter.pattern.demo\interpreter.pattern.demo.csproj.vspscc" />
+    <None Include="interpreter.pattern.demo\interpreter.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="interpreter.pattern.demo\interpreter.pattern.demo\obj\Debug\interpreter.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="IteratorPattern\aggregate\aggregate.csproj.vspscc" />
+    <None Include="IteratorPattern\aggregate\obj\Debug\aggregate.csproj.CoreCompileInputs.cache" />
+    <None Include="IteratorPattern\aggregate\obj\Debug\build.force" />
+    <None Include="IteratorPattern\aggregate\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="IteratorPattern\IteratorPattern.vssscc" />
+    <None Include="IteratorPattern\IteratorPattern\App.config" />
+    <None Include="IteratorPattern\IteratorPattern\IteratorPattern.csproj.vspscc" />
+    <None Include="IteratorPattern\IteratorPattern\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="IteratorPattern\IteratorPattern\obj\Debug\IteratorPattern.csproj.CoreCompileInputs.cache" />
+    <None Include="IteratorPattern\iterator\iterator.csproj.vspscc" />
+    <None Include="IteratorPattern\iterator\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="IteratorPattern\iterator\obj\Debug\iterator.csproj.CoreCompileInputs.cache" />
+    <None Include="Mediator\Mediator.vssscc" />
+    <None Include="Mediator\Mediator\App.config" />
+    <None Include="Mediator\Mediator\Mediator.csproj.vspscc" />
+    <None Include="Mediator\Mediator\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Mediator\Mediator\obj\Debug\Mediator.csproj.CoreCompileInputs.cache" />
+    <None Include="memento.pattern.demo\memento.pattern.demo.vssscc" />
+    <None Include="memento.pattern.demo\memento.pattern.demo\App.config" />
+    <None Include="memento.pattern.demo\memento.pattern.demo\memento.pattern.demo.csproj.vspscc" />
+    <None Include="memento.pattern.demo\memento.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="memento.pattern.demo\memento.pattern.demo\obj\Debug\memento.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="Observer\Observer.vssscc" />
+    <None Include="Observer\Observer\App.config" />
+    <None Include="Observer\Observer\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Observer\Observer\obj\Debug\Observer.csproj.CoreCompileInputs.cache" />
+    <None Include="Prototype\BasicCar\Car.csproj.vspscc" />
+    <None Include="Prototype\BasicCar\obj\Debug\Car.csproj.CoreCompileInputs.cache" />
+    <None Include="Prototype\BasicCar\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Prototype\Prototype.vssscc" />
+    <None Include="Prototype\Prototype\App.config" />
+    <None Include="Prototype\Prototype\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Prototype\Prototype\obj\Debug\Prototype.csproj.CoreCompileInputs.cache" />
+    <None Include="Prototype\Prototype\Prototype.csproj.vspscc" />
+    <None Include="ProxyPattern\ProxyClasses\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ProxyPattern\ProxyClasses\obj\Debug\ProxyClasses.csproj.CoreCompileInputs.cache" />
+    <None Include="ProxyPattern\ProxyClasses\ProxyClasses.csproj.vspscc" />
+    <None Include="Singleton\Singleton.vssscc" />
+    <None Include="Singleton\Singleton\App.config" />
+    <None Include="Singleton\Singleton\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Singleton\Singleton\obj\Debug\Singleton.csproj.CoreCompileInputs.cache" />
+    <None Include="state.pattern.demo\state.pattern.demo.vssscc" />
+    <None Include="state.pattern.demo\state.pattern.demo\App.config" />
+    <None Include="state.pattern.demo\state.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="state.pattern.demo\state.pattern.demo\obj\Debug\state.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="state.pattern.demo\state.pattern.demo\state.pattern.demo.csproj.vspscc" />
+    <None Include="Strategy.pattern.demo\Strategy.pattern.demo\App.config" />
+    <None Include="Strategy.pattern.demo\Strategy.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Strategy.pattern.demo\Strategy.pattern.demo\obj\Debug\Strategy.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="Strategy.pattern.demo\Strategy.pattern.demo\Strategy.pattern.demo.csproj.vspscc" />
+    <None Include="Template Method patterns\Template Method patterns\App.config" />
+    <None Include="Template Method patterns\Template Method patterns\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Template Method patterns\Template Method patterns\obj\Debug\Template Method patterns.csproj.CoreCompileInputs.cache" />
+    <None Include="Template Method patterns\Template Method patterns\Template Method patterns.csproj.vspscc" />
+    <None Include="visitor.pattern.demo\visitor.pattern.demo.vssscc" />
+    <None Include="visitor.pattern.demo\visitor.pattern.demo\App.config" />
+    <None Include="visitor.pattern.demo\visitor.pattern.demo\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="visitor.pattern.demo\visitor.pattern.demo\obj\Debug\visitor.pattern.demo.csproj.CoreCompileInputs.cache" />
+    <None Include="visitor.pattern.demo\visitor.pattern.demo\visitor.pattern.demo.csproj.vspscc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abstract factory\abstract factory\ActionMovieFactory.cs" />
+    <Compile Include="abstract factory\abstract factory\BollywoodActionMovie.cs" />
+    <Compile Include="abstract factory\abstract factory\BollywoodComedyMovie.cs" />
+    <Compile Include="abstract factory\abstract factory\ComedyMovieFactory.cs" />
+    <Compile Include="abstract factory\abstract factory\IBollywoodMovie.cs" />
+    <Compile Include="abstract factory\abstract factory\IMovieFactory.cs" />
+    <Compile Include="abstract factory\abstract factory\ITollywoodMovie.cs" />
+    <Compile Include="abstract factory\abstract factory\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="abstract factory\abstract factory\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="abstract factory\abstract factory\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="abstract factory\abstract factory\Program.cs" />
+    <Compile Include="abstract factory\abstract factory\Properties\AssemblyInfo.cs" />
+    <Compile Include="abstract factory\abstract factory\TollywoodActionMovie.cs" />
+    <Compile Include="abstract factory\abstract factory\TollywoodComedyMovie.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\Calculator.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\CalculatorAdapter.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\Program.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\Rect.cs" />
+    <Compile Include="adapter.pattern.demo\adapter.pattern.demo\Triangle.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\GreenColor.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\IColor.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\Program.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\Rectangle.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\RedColor.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\Shape.cs" />
+    <Compile Include="bridge.pattern.demo\bridge.pattern.demo\Triangle.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\Car.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\Director.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\IBuilder.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\MotorCycle.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\Product.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\Program.cs" />
+    <Compile Include="builder.pattern.demo\builder.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\EmailErrorHandled.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\FaxErrorHandled.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\IReceiver.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\IssueRaiser.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\Message.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\Program.cs" />
+    <Compile Include="ChainofResponsability\ChainofResponsability\Properties\AssemblyInfo.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\ICommand.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\Invoke.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\MyRedoCommand.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\MyUndoCommand.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\Program.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="command.pattern.demo\command.pattern.demo\Receiver.cs" />
+    <Compile Include="composite.pattern.demo\composite.pattern.demo\ITeacher.cs" />
+    <Compile Include="composite.pattern.demo\composite.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="composite.pattern.demo\composite.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="composite.pattern.demo\composite.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="composite.pattern.demo\composite.pattern.demo\Program.cs" />
+    <Compile Include="composite.pattern.demo\composite.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="composite.pattern.demo\composite.pattern.demo\Teacher.cs" />
+    <Compile Include="Decorator\Decorator\AbstractDecortator.cs" />
+    <Compile Include="Decorator\Decorator\Component.cs" />
+    <Compile Include="Decorator\Decorator\ConcreteComponent.cs" />
+    <Compile Include="Decorator\Decorator\ConcreteDecoratorEx_1.cs" />
+    <Compile Include="Decorator\Decorator\ConcreteDecoratorEx_2.cs" />
+    <Compile Include="Decorator\Decorator\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Decorator\Decorator\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Decorator\Decorator\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Decorator\Decorator\Program.cs" />
+    <Compile Include="Decorator\Decorator\Properties\AssemblyInfo.cs" />
+    <Compile Include="FacadePatternEx\FacadePatternEx\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="FacadePatternEx\FacadePatternEx\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="FacadePatternEx\FacadePatternEx\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="FacadePatternEx\FacadePatternEx\Program.cs" />
+    <Compile Include="FacadePatternEx\FacadePatternEx\Properties\AssemblyInfo.cs" />
+    <Compile Include="FacadePatternEx\roboparts\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="FacadePatternEx\roboparts\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="FacadePatternEx\roboparts\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="FacadePatternEx\roboparts\Properties\AssemblyInfo.cs" />
+    <Compile Include="FacadePatternEx\roboparts\RoboMetal.cs" />
+    <Compile Include="FacadePatternEx\roboparts\RobotBody.cs" />
+    <Compile Include="FacadePatternEx\roboparts\RobotColor.cs" />
+    <Compile Include="FacadePatternEx\robotfacade\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="FacadePatternEx\robotfacade\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="FacadePatternEx\robotfacade\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="FacadePatternEx\robotfacade\Properties\AssemblyInfo.cs" />
+    <Compile Include="FacadePatternEx\robotfacade\RobotFacade.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\ConcreteFactory.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\Duck.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\IAnimal.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\IAnimalFactory.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\Program.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="factory.pattern.demo\factory.pattern.demo\Tiger.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\IRobot.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\LargeRobot.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\Program.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\RobotFactory.cs" />
+    <Compile Include="flyweight.pattern.demo\flyweight.pattern.demo\SmallRobot.cs" />
+    <Compile Include="Ienumerable\Ienumerable\Program.cs" />
+    <Compile Include="Ienumerable\Ienumerable\Properties\AssemblyInfo.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\Context.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\IExpression.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\IntToWords.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\Program.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="interpreter.pattern.demo\interpreter.pattern.demo\StringToBinaryExp.cs" />
+    <Compile Include="IteratorPattern\aggregate\Arts.cs" />
+    <Compile Include="IteratorPattern\aggregate\ArtsIterator.cs" />
+    <Compile Include="IteratorPattern\aggregate\ISubject.cs" />
+    <Compile Include="IteratorPattern\aggregate\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="IteratorPattern\aggregate\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="IteratorPattern\aggregate\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="IteratorPattern\aggregate\Properties\AssemblyInfo.cs" />
+    <Compile Include="IteratorPattern\aggregate\Science.cs" />
+    <Compile Include="IteratorPattern\aggregate\ScienceIterator.cs" />
+    <Compile Include="IteratorPattern\IteratorPattern\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="IteratorPattern\IteratorPattern\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="IteratorPattern\IteratorPattern\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="IteratorPattern\IteratorPattern\Program.cs" />
+    <Compile Include="IteratorPattern\IteratorPattern\Properties\AssemblyInfo.cs" />
+    <Compile Include="IteratorPattern\iterator\IIterator.cs" />
+    <Compile Include="IteratorPattern\iterator\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="IteratorPattern\iterator\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="IteratorPattern\iterator\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="IteratorPattern\iterator\Properties\AssemblyInfo.cs" />
+    <Compile Include="Mediator\Mediator\Boss.cs" />
+    <Compile Include="Mediator\Mediator\ConcretMediator.cs" />
+    <Compile Include="Mediator\Mediator\Friend.cs" />
+    <Compile Include="Mediator\Mediator\Friend1.cs" />
+    <Compile Include="Mediator\Mediator\Friend2.cs" />
+    <Compile Include="Mediator\Mediator\Mediator.cs" />
+    <Compile Include="Mediator\Mediator\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Mediator\Mediator\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Mediator\Mediator\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Mediator\Mediator\Program.cs" />
+    <Compile Include="Mediator\Mediator\Properties\AssemblyInfo.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\CareTaker.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\Memento.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\Originator.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\Program.cs" />
+    <Compile Include="memento.pattern.demo\memento.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="Observer\Observer\IObserver.cs" />
+    <Compile Include="Observer\Observer\ISubject.cs" />
+    <Compile Include="Observer\Observer\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Observer\Observer\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Observer\Observer\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Observer\Observer\Observer.cs" />
+    <Compile Include="Observer\Observer\Observer1.cs" />
+    <Compile Include="Observer\Observer\Observer2.cs" />
+    <Compile Include="Observer\Observer\Program.cs" />
+    <Compile Include="Observer\Observer\Properties\AssemblyInfo.cs" />
+    <Compile Include="Observer\Observer\Subject.cs" />
+    <Compile Include="Prototype\BasicCar\BasicCar.cs" />
+    <Compile Include="Prototype\BasicCar\Ford.cs" />
+    <Compile Include="Prototype\BasicCar\Nano.cs" />
+    <Compile Include="Prototype\BasicCar\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Prototype\BasicCar\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Prototype\BasicCar\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Prototype\BasicCar\Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Prototype\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Prototype\Prototype\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Prototype\Prototype\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Prototype\Prototype\Program.cs" />
+    <Compile Include="Prototype\Prototype\Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyPattern\ProxyClasses\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="ProxyPattern\ProxyClasses\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="ProxyPattern\ProxyClasses\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="ProxyPattern\ProxyClasses\Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyPattern\ProxyClasses\Proxy.cs" />
+    <Compile Include="Singleton\Singleton\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Singleton\Singleton\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Singleton\Singleton\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Singleton\Singleton\Program.cs" />
+    <Compile Include="Singleton\Singleton\Properties\AssemblyInfo.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\Off.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\On.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\Program.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\RemoteControl.cs" />
+    <Compile Include="state.pattern.demo\state.pattern.demo\TV.cs" />
+    <Compile Include="Strategy.pattern.demo\Strategy.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Strategy.pattern.demo\Strategy.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Strategy.pattern.demo\Strategy.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Strategy.pattern.demo\Strategy.pattern.demo\Program.cs" />
+    <Compile Include="Strategy.pattern.demo\Strategy.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="Template Method patterns\Template Method patterns\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Template Method patterns\Template Method patterns\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Template Method patterns\Template Method patterns\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Template Method patterns\Template Method patterns\Program.cs" />
+    <Compile Include="Template Method patterns\Template Method patterns\Properties\AssemblyInfo.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\IOriginalInterface.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\IVisitor.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\MyClass.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\Program.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\Properties\AssemblyInfo.cs" />
+    <Compile Include="visitor.pattern.demo\visitor.pattern.demo\Visitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="BuildProcessTemplates\AzureContinuousDeployment.11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BuildProcessTemplates\DefaultTemplate.11.1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BuildProcessTemplates\LabDefaultTemplate.11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BuildProcessTemplates\UpgradeTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="abstract factory\abstract factory\bin\Debug\" />
+    <Folder Include="abstract factory\abstract factory\obj\Debug\TempPE\" />
+    <Folder Include="adapter.pattern.demo\adapter.pattern.demo\bin\Debug\" />
+    <Folder Include="adapter.pattern.demo\adapter.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="bridge.pattern.demo\bridge.pattern.demo\bin\Debug\" />
+    <Folder Include="bridge.pattern.demo\bridge.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="builder.pattern.demo\builder.pattern.demo\bin\Debug\" />
+    <Folder Include="builder.pattern.demo\builder.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="ChainofResponsability\ChainofResponsability\bin\Debug\" />
+    <Folder Include="ChainofResponsability\ChainofResponsability\obj\Debug\TempPE\" />
+    <Folder Include="command.pattern.demo\command.pattern.demo\bin\Debug\" />
+    <Folder Include="command.pattern.demo\command.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="composite.pattern.demo\composite.pattern.demo\bin\Debug\" />
+    <Folder Include="composite.pattern.demo\composite.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="Decorator\Decorator\bin\Debug\" />
+    <Folder Include="Decorator\Decorator\obj\Debug\TempPE\" />
+    <Folder Include="FacadePatternEx\FacadePatternEx\bin\Debug\" />
+    <Folder Include="FacadePatternEx\FacadePatternEx\obj\Debug\TempPE\" />
+    <Folder Include="FacadePatternEx\roboparts\bin\Debug\" />
+    <Folder Include="FacadePatternEx\roboparts\obj\Debug\TempPE\" />
+    <Folder Include="FacadePatternEx\roboparts\Service References\" />
+    <Folder Include="FacadePatternEx\robotfacade\bin\Debug\" />
+    <Folder Include="FacadePatternEx\robotfacade\obj\Debug\TempPE\" />
+    <Folder Include="factory.pattern.demo\factory.pattern.demo\bin\Debug\" />
+    <Folder Include="factory.pattern.demo\factory.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="flyweight.pattern.demo\flyweight.pattern.demo\bin\Debug\" />
+    <Folder Include="flyweight.pattern.demo\flyweight.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="interpreter.pattern.demo\interpreter.pattern.demo\bin\Debug\" />
+    <Folder Include="interpreter.pattern.demo\interpreter.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="IteratorPattern\aggregate\bin\Debug\" />
+    <Folder Include="IteratorPattern\aggregate\obj\Debug\TempPE\" />
+    <Folder Include="IteratorPattern\IteratorPattern\bin\Debug\" />
+    <Folder Include="IteratorPattern\IteratorPattern\obj\Debug\TempPE\" />
+    <Folder Include="IteratorPattern\iterator\bin\Debug\" />
+    <Folder Include="IteratorPattern\iterator\obj\Debug\TempPE\" />
+    <Folder Include="Mediator\Mediator\bin\Debug\" />
+    <Folder Include="Mediator\Mediator\obj\Debug\TempPE\" />
+    <Folder Include="memento.pattern.demo\memento.pattern.demo\bin\Debug\" />
+    <Folder Include="memento.pattern.demo\memento.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="Observer\Observer\bin\Debug\" />
+    <Folder Include="Observer\Observer\obj\Debug\TempPE\" />
+    <Folder Include="Prototype\BasicCar\bin\Debug\" />
+    <Folder Include="Prototype\BasicCar\obj\Debug\TempPE\" />
+    <Folder Include="Prototype\Prototype\bin\Debug\" />
+    <Folder Include="Prototype\Prototype\obj\Debug\TempPE\" />
+    <Folder Include="ProxyPattern\ProxyClasses\bin\Debug\" />
+    <Folder Include="ProxyPattern\ProxyClasses\obj\Debug\TempPE\" />
+    <Folder Include="Singleton\Singleton\bin\Debug\" />
+    <Folder Include="Singleton\Singleton\obj\Debug\TempPE\" />
+    <Folder Include="state.pattern.demo\state.pattern.demo\bin\Debug\" />
+    <Folder Include="state.pattern.demo\state.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="Strategy.pattern.demo\Strategy.pattern.demo\bin\Debug\" />
+    <Folder Include="Strategy.pattern.demo\Strategy.pattern.demo\obj\Debug\TempPE\" />
+    <Folder Include="Template Method patterns\Template Method patterns\bin\Debug\" />
+    <Folder Include="Template Method patterns\Template Method patterns\obj\Debug\TempPE\" />
+    <Folder Include="visitor.pattern.demo\visitor.pattern.demo\bin\Debug\" />
+    <Folder Include="visitor.pattern.demo\visitor.pattern.demo\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
